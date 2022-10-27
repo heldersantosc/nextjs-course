@@ -16,18 +16,19 @@ export default function Home() {
           <Link href={"/clients/helder"}>client helder</Link>
         </li>
         <li>
+          <Link href={"/clients/helder/projectId"}>client helder projectId</Link>
+        </li>
+        <li>
           <Link href={"/blog/22"}>blog 22</Link>
         </li>
-        {clients.map((client) => {
+        {clients.map(client => {
           return (
             <li key={client.id}>
               <Link
                 key={client.id}
                 href={{
                   pathname: "clients/[id]",
-                  query: {
-                    id: client.id,
-                  },
+                  query: { id: client.id },
                 }}
               >
                 {client.value}
