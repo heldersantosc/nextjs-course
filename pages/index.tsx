@@ -7,6 +7,12 @@ export default function Home() {
         <li>
           <Link href={"/clients"}>clients</Link>
         </li>
+        <li>
+          <Link href={"/clients/helder"}>client helder</Link>
+        </li>
+        <li>
+          <Link href={"/blog/22"}>blog 22</Link>
+        </li>
       </ul>
     </div>
   );
